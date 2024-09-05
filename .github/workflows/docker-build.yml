@@ -27,8 +27,8 @@ jobs:
 
       # Tag the Docker image for GitHub Container Registry
       - name: Tag the Docker image
-        run: docker tag arma:latest ghcr.io/${{ github.repository_owner }}/arma:latest
+        run: docker tag arma:latest ghcr.io/aureprod/arma:latest
 
       # Push the Docker image to GitHub Container Registry
       - name: Push the Docker image
-        run: docker push ghcr.io/${{ github.repository_owner }}/arma:latest
+        run: docker push ghcr.io/aureprod/arma:latest
