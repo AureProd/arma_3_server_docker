@@ -52,10 +52,12 @@ def load_server_files() -> None:
         install_database()
         
     for servermod_folder in os.listdir(SERVERMODS_FOLDER):
-        install_servermod(servermod_folder)
+        if not servermod_folder.endswith(".pbo"):
+            install_servermod(servermod_folder)
         
     for mission_folder in os.listdir(MISSIONS_FOLDER):
-        install_mission(mission_folder)
+        if not servermod_folder.endswith(".pbo"):
+            install_mission(mission_folder)
         
     
 def reset_server_files() -> None:
