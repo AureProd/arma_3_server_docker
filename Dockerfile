@@ -54,4 +54,4 @@ RUN pip install /builder
 
 WORKDIR /server
 
-CMD python3 -m builder -d
+CMD ["python3", "-m", "builder", "-d"]
