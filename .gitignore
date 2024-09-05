@@ -1,0 +1,9 @@
+build*
+!builder
+
+configs/mods.json
+
+docker-compose*
+
+configs/*
+!configs/mods_example.json

@@ -1,0 +1,32 @@
+import os
+from pathlib import Path
+
+
+STEAM_USER = os.getenv("STEAM_USER")
+STEAM_PASSWORD = os.getenv("STEAM_PASSWORD")
+
+ARMA_PARAMS = os.getenv("ARMA_PARAMS")
+
+MYSQL_HOST = os.getenv("MYSQL_HOST")
+MYSQL_PORT = os.getenv("MYSQL_PORT")
+MYSQL_DATABASE = os.getenv("MYSQL_DATABASE")
+MYSQL_USER = os.getenv("MYSQL_USER")
+MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD")
+
+SERVER_FOLDER = Path("/server")
+SERVER_MODS_FOLDER = SERVER_FOLDER / "mods"
+SERVER_SERVERMODS_FOLDER = SERVER_FOLDER / "servermods"
+SERVER_MISSIONS_FOLDER = SERVER_FOLDER / "mpmissions"
+SERVER_MODS_KEYS_FOLDER = SERVER_FOLDER / "keys"
+
+TMP_MODS_FOLDER = Path("/tmp/mods")
+
+CONFIGS_FOLDER = Path("/configs")
+SERVERMODS_FOLDER = CONFIGS_FOLDER / "servermods"
+MISSIONS_FOLDER = CONFIGS_FOLDER / "mpmissions"
+MODS_CONFIG_FILE = CONFIGS_FOLDER / "mods.json"
+
+SERVER_CONFIG_FILE_NAME = "server.cfg"
+
+EXTDB3_SERVERMOD_NAME = "@extDB3"
+EXTDB3_FOLDER = Path("/utils/extdb3")
