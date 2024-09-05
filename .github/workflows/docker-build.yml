@@ -32,4 +32,4 @@ jobs:
 
       # Push the Docker image to GitHub Container Registry
       - name: Push the Docker image
-        run: docker push ghcr.io/aureprod/arma_3_server_docker:latest
+        run: docker push ghcr.io/aureprod/arma:latest
