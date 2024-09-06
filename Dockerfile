@@ -55,3 +55,6 @@ RUN pip install /builder
 WORKDIR /server
 
 CMD ["python3", "-m", "builder", "-d"]
+
+# Set the signal to be used when stopping the container (SIGKILL)
+STOPSIGNAL SIGKILL
